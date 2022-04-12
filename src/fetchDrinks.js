@@ -1,4 +1,6 @@
+import { showLoading } from './loading.js'
 const fetchDrinks = async (url) => {
+  // showLoading()
   try {
     const response = await fetch(url)
     const data = await response.json()
