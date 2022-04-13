@@ -1,10 +1,10 @@
 import get from './getElement.js'
-import { hideLoading } from './loading.js'
+// import { hideLoading } from './loading.js'
 const displayDrinks = ({ drinks }) => {
   const section = get('.section-center')
   const title = get('.title')
   if (!drinks) {
-    hideLoading()
+    // hideLoading()
     title.textContent = 'sorry, no drinks match your search'
     section.innerHTML = null
     return
@@ -20,7 +20,7 @@ const displayDrinks = ({ drinks }) => {
       </a> `
     })
     .join('')
-  hideLoading()
+  // hideLoading()
   title.textContent = ''
   section.innerHTML = newDrinks
   return section

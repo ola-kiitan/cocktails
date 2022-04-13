@@ -1,4 +1,4 @@
-import { showLoading } from './loading.js'
+// import { showLoading } from './loading.js'
 const fetchDrinks = async (url) => {
   // showLoading()
   try {
